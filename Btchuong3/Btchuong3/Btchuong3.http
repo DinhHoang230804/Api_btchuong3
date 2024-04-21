@@ -1,0 +1,6 @@
+@Btchuong3_HostAddress = http://localhost:5039
+
+GET {{Btchuong3_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

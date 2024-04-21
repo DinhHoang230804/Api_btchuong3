@@ -1,0 +1,273 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\laptrinhweb\\Btchuong3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\services\\ilibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\services\\ilibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\model\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\model\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\model\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\model\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\model\\publishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\model\\publishers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\model\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\model\\books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\controllers\\publisherscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\controllers\\publisherscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\controllers\\bookscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\controllers\\bookscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Migrations\\20240421124302_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Btchuong3\\Migrations\\20240421124302_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\controllers\\authorscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\controllers\\authorscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|d:\\laptrinhweb\\btchuong3\\btchuong3\\btchuong3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CDA9A731-14BB-4A3A-B64F-803F1C2ED496}|Btchuong3\\Btchuong3.csproj|solutionrelative:btchuong3\\btchuong3.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book_Author.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Book_Author.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Model\\Book_Author.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Book_Author.cs",
+              "RelativeToolTip": "Btchuong3\\Model\\Book_Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:28:01.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Books.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Books.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Model\\Books.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Books.cs",
+              "RelativeToolTip": "Btchuong3\\Model\\Books.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:27:53.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Publishers.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Publishers.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Model\\Publishers.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Publishers.cs",
+              "RelativeToolTip": "Btchuong3\\Model\\Publishers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:28:13.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LibraryService.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Services\\LibraryService.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Services\\LibraryService.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Services\\LibraryService.cs",
+              "RelativeToolTip": "Btchuong3\\Services\\LibraryService.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAA1wIsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:11:26.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Author.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Model\\Author.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Model\\Author.cs",
+              "RelativeToolTip": "Btchuong3\\Model\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:27:28.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Data\\DbInitializer.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Btchuong3\\Data\\DbInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:37:11.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ILibraryService.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Services\\ILibraryService.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Services\\ILibraryService.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Services\\ILibraryService.cs",
+              "RelativeToolTip": "Btchuong3\\Services\\ILibraryService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T10:30:40.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PublishersControllers.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Controllers\\PublishersControllers.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Controllers\\PublishersControllers.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Controllers\\PublishersControllers.cs",
+              "RelativeToolTip": "Btchuong3\\Controllers\\PublishersControllers.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAqwEsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:30:45.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BooksControllers.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Controllers\\BooksControllers.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Controllers\\BooksControllers.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Controllers\\BooksControllers.cs",
+              "RelativeToolTip": "Btchuong3\\Controllers\\BooksControllers.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAADEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:30:37.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\appsettings.json",
+              "RelativeDocumentMoniker": "Btchuong3\\appsettings.json",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\appsettings.json",
+              "RelativeToolTip": "Btchuong3\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-20T10:31:44.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240421124302_intial.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Migrations\\20240421124302_intial.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Migrations\\20240421124302_intial.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Migrations\\20240421124302_intial.cs",
+              "RelativeToolTip": "Btchuong3\\Migrations\\20240421124302_intial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T12:43:02.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Btchuong3\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:36:29.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Program.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Program.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Program.cs",
+              "RelativeToolTip": "Btchuong3\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAowBAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T05:35:22.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthorsControllers.cs",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Controllers\\AuthorsControllers.cs",
+              "RelativeDocumentMoniker": "Btchuong3\\Controllers\\AuthorsControllers.cs",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Controllers\\AuthorsControllers.cs",
+              "RelativeToolTip": "Btchuong3\\Controllers\\AuthorsControllers.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wEsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T06:30:28.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Btchuong3.csproj",
+              "DocumentMoniker": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Btchuong3.csproj",
+              "RelativeDocumentMoniker": "Btchuong3\\Btchuong3.csproj",
+              "ToolTip": "D:\\laptrinhweb\\Btchuong3\\Btchuong3\\Btchuong3.csproj",
+              "RelativeToolTip": "Btchuong3\\Btchuong3.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-20T10:26:36.882Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

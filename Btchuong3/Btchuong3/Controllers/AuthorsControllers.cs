@@ -1,77 +1,58 @@
 ﻿using Btchuong3.Data;
-using Btchuong3.Model;
+using Btchuong3.Model.Domain;
+using Btchuong3.Model.DTO;
+using Btchuong3.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace Btchuong3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AuthorsController : ControllerBase
     {
-        private readonly AppDbContext _context;
-
-        public AuthorsController(AppDbContext context)
+        private readonly AppDbContext _dbContext;
+        private readonly IAuthorRepository _authorRepository;
+        public AuthorsController(AppDbContext dbContext, IAuthorRepository
+       authorRepository)
         {
-            _context = context;
+            _dbContext = dbContext;
+            _authorRepository = authorRepository;
         }
-
-        [HttpGet]
-        public ActionResult<IEnumerable<Author>> GetAuthors()
+        [HttpGet("get-all-author")]
+        public IActionResult GetAllAuthor()
         {
-            return _context.authors.ToList();
+            var allAuthors = _authorRepository.GellAllAuthors();
+            return Ok(allAuthors);
         }
-
-        [HttpGet("{id}")]
-        public ActionResult<Author> GetAuthor(int id)
+        [HttpGet("get-author-by-id/{id}")]
+        public IActionResult GetAuthorById(int id)
         {
-            var author = _context.authors.Find(id);
-
-            if (author == null)
-            {
-                return NotFound();
-            }
-
-            return author;
+            var authorWithId = _authorRepository.GetAuthorById(id);
+            return Ok(authorWithId);
         }
-
-        [HttpPost]
-        public IActionResult PostAuthor(Author author)
+        [HttpPost("add - author")]
+        public IActionResult AddAuthors([FromBody] AddAuthorRequestDTO
+       addAuthorRequestDTO)
         {
-            _context.authors.Add(author);
-            _context.SaveChanges();
-
-            return CreatedAtAction(nameof(GetAuthor), new { id = author.Id }, author);
+            var authorAdd = _authorRepository.AddAuthor(addAuthorRequestDTO);
+            return Ok();
         }
-
-        [HttpPut("{id}")]
-        public IActionResult PutAuthor(int id, Author author)
+        [HttpPut("update-author-by-id/{id}")]
+        public IActionResult UpdateBookById(int id, [FromBody] AuthorNoIdDTO
+       authorDTO)
         {
-            if (id != author.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(author).State = EntityState.Modified;
-            _context.SaveChanges();
-
-            return NoContent();
+            var authorUpdate = _authorRepository.UpdateAuthorById(id, authorDTO);
+            return Ok(authorUpdate);
         }
-
-        [HttpDelete("{id}")]
-        public IActionResult DeleteAuthor(int id)
+        [HttpDelete("delete-author-by-id/{id}")]
+        public IActionResult DeleteBookById(int id)
         {
-            var author = _context.authors.Find(id);
-
-            if (author == null)
-            {
-                return NotFound();
-            }
-
-            _context.authors.Remove(author);
-            _context.SaveChanges();
-
-            return NoContent();
+            var authorDelete = _authorRepository.DeleteAuthorById(id);
+            return Ok();
         }
     }
 }

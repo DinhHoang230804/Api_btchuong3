@@ -22,7 +22,7 @@ namespace Btchuong3.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Btchuong3.Model.Author", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -31,142 +31,187 @@ namespace Btchuong3.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("FullName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("authors");
+                    b.ToTable("Authors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FullName = "J.K. Rowling"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            FullName = "Fujiko Fujio"
+                        });
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Book_Author", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Book_Author", b =>
                 {
-                    b.Property<int?>("BookID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("AuthorID")
-                        .HasColumnType("int");
-
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
-                    b.HasKey("BookID", "AuthorID");
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("AuthorID");
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
 
-                    b.ToTable("book_Authors");
+                    b.HasKey("Id", "AuthorId");
+
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("BookAuthor");
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Books", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Books", b =>
                 {
-                    b.Property<int>("BookID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BookID"));
-
-                    b.Property<int?>("AuthorId")
-                        .HasColumnType("int");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CoverUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("DateAdded")
+                    b.Property<DateTime>("DateAdded")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DateRead")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Genre")
-                        .HasColumnType("int");
+                    b.Property<string>("Genre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool?>("IsRead")
+                    b.Property<bool>("IsRead")
                         .HasColumnType("bit");
 
                     b.Property<int>("PublisherID")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("PublishersID")
                         .HasColumnType("int");
 
                     b.Property<int?>("Rate")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("BookID");
+                    b.HasKey("Id");
 
-                    b.HasIndex("AuthorId");
+                    b.HasIndex("PublisherID");
 
-                    b.HasIndex("PublishersID");
+                    b.ToTable("Books");
 
-                    b.ToTable("books");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CoverUrl = "https://images.example.com/BookHarry-Potter.jpg",
+                            DateAdded = new DateTime(2024, 5, 7, 15, 15, 9, 295, DateTimeKind.Local).AddTicks(9971),
+                            DateRead = new DateTime(2024, 5, 7, 15, 15, 9, 295, DateTimeKind.Local).AddTicks(9952),
+                            Description = "Ever since Harry Potter had come home for the summer, the Dursleys had been so mean and hideous that all Harry wanted was to get back to the Hogwarts School for Witchcraft and Wizardry.",
+                            Genre = "dung",
+                            IsRead = true,
+                            PublisherID = 1,
+                            Rate = 5,
+                            Title = "Harry Potter and the Chamber of Secrets"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CoverUrl = "https://images.example.com/BookDoraemon.jpg",
+                            DateAdded = new DateTime(2024, 5, 7, 15, 15, 9, 295, DateTimeKind.Local).AddTicks(9990),
+                            DateRead = new DateTime(2024, 5, 7, 15, 15, 9, 295, DateTimeKind.Local).AddTicks(9987),
+                            Description = "Doraemon phieu luu cung nhung nguoi ban",
+                            Genre = "dung",
+                            IsRead = true,
+                            PublisherID = 2,
+                            Rate = 5,
+                            Title = "Doraemon"
+                        });
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Publishers", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Publishers", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
-                    b.ToTable("publishers");
+                    b.ToTable("Publishers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Bloomsbury Publishing"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Kim dong"
+                        });
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Book_Author", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Book_Author", b =>
                 {
-                    b.HasOne("Btchuong3.Model.Author", "Author")
+                    b.HasOne("Btchuong3.Model.Domain.Author", "Author")
                         .WithMany("Book_Authors")
-                        .HasForeignKey("AuthorID")
+                        .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Btchuong3.Model.Books", "Books")
+                    b.HasOne("Btchuong3.Model.Domain.Books", "Book")
                         .WithMany("Book_Authors")
-                        .HasForeignKey("BookID")
+                        .HasForeignKey("Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
 
-                    b.Navigation("Books");
+                    b.Navigation("Book");
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Books", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Books", b =>
                 {
-                    b.HasOne("Btchuong3.Model.Author", null)
+                    b.HasOne("Btchuong3.Model.Domain.Publishers", "Publisher")
                         .WithMany("Books")
-                        .HasForeignKey("AuthorId");
+                        .HasForeignKey("PublisherID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Btchuong3.Model.Publishers", "Publishers")
-                        .WithMany("Books")
-                        .HasForeignKey("PublishersID");
-
-                    b.Navigation("Publishers");
+                    b.Navigation("Publisher");
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Author", b =>
-                {
-                    b.Navigation("Book_Authors");
-
-                    b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("Btchuong3.Model.Books", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Author", b =>
                 {
                     b.Navigation("Book_Authors");
                 });
 
-            modelBuilder.Entity("Btchuong3.Model.Publishers", b =>
+            modelBuilder.Entity("Btchuong3.Model.Domain.Books", b =>
+                {
+                    b.Navigation("Book_Authors");
+                });
+
+            modelBuilder.Entity("Btchuong3.Model.Domain.Publishers", b =>
                 {
                     b.Navigation("Books");
                 });

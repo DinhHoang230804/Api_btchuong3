@@ -1,32 +1,31 @@
 ﻿using Btchuong3.Model;
+using Btchuong3.Model.Domain;
+using Btchuong3.Model.DTO;
+using Btchuong3.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Btchuong3.Data;
 
 namespace Btchuong3.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public DbSet<Books> Books { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Publishers> Publishers { get; set; }
+        public DbSet<Model.Domain.Book_Author> BookAuthor { get; set; }
+        public DbSet<Image> Images { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder builder)
         {
-        }
-        public DbSet<Books> books { get; set; }
-        public DbSet<Author> authors { get; set; }
-        public DbSet<Book_Author> book_Authors { get; set; }
-        public DbSet<Publishers> publishers { get; set; }
+            builder.Entity<Model.Domain.Book_Author>().HasKey(h => new { h.Id, h.AuthorId });
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Book_Author>()
-                .HasKey(bc => new { bc.BookID, bc.AuthorID });
+            builder.Entity<Model.Domain.Book_Author>().HasOne(h => h.Book).WithMany(h => h.Book_Authors).HasForeignKey(h => h.Id);
 
-            modelBuilder.Entity<Book_Author>()
-                .HasOne(bc => bc.Books)
-                .WithMany(b => b.Book_Authors)
-                .HasForeignKey(bc => bc.BookID);
+            builder.Entity<Model.Domain.Book_Author>().HasOne(h => h.Author).WithMany(h => h.Book_Authors).HasForeignKey(h => h.AuthorId);
 
-            modelBuilder.Entity<Book_Author>()
-                .HasOne(bc => bc.Author)
-                .WithMany(a => a.Book_Authors)
-                .HasForeignKey(bc => bc.AuthorID);
+            new DbInitializer(builder).Seed();
         }
     }
 }

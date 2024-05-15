@@ -1,5 +1,8 @@
 ﻿using Btchuong3.Data;
-using Btchuong3.Model;
+using Btchuong3.Model.Domain;
+using Btchuong3.Model.DTO;
+using Btchuong3.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,70 +10,50 @@ namespace Btchuong3.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class PublishersController : ControllerBase
     {
-        private readonly AppDbContext _context;
-
-        public PublishersController(AppDbContext context)
+        private readonly AppDbContext _dbContext;
+        private readonly IPublisherRepository _publisherRepository;
+        public PublishersController(AppDbContext dbContext, IPublisherRepository
+       publisherRepository)
         {
-            _context = context;
+            _dbContext = dbContext;
+            _publisherRepository = publisherRepository;
         }
-
-        [HttpGet]
-        public ActionResult<IEnumerable<Publishers>> GetPublishers()
+        [HttpGet("get-all-publisher")]
+        public IActionResult GetAllPublisher()
         {
-            return _context.publishers.ToList();
+            var allPublishers = _publisherRepository.GetAllPublishers();
+            return Ok(allPublishers);
         }
-
-        [HttpGet("{id}")]
-        public ActionResult<Publishers> GetPublishers(int id)
+        [HttpGet("get-publisher-by-id")]
+        public IActionResult GetPublisherById(int id)
         {
-            var publishers = _context.publishers.Find(id);
-
-            if (publishers == null)
-            {
-                return NotFound();
-            }
-            return publishers;
+            var publisherWithId = _publisherRepository.GetPublisherById(id);
+            return Ok(publisherWithId);
         }
-
-        [HttpPost]
-        public IActionResult PostPublishers(Publishers publishers)
+        [HttpPost("add - publisher")]
+        public IActionResult AddPublisher([FromBody] AddPublisherRequestDTO
+       addPublisherRequestDTO)
         {
-            _context.publishers.Add(publishers);
-            _context.SaveChanges();
-
-            return CreatedAtAction(nameof(GetPublishers), new { id = publishers.ID }, publishers);
+            var publisherAdd = _publisherRepository.AddPublisher(addPublisherRequestDTO);
+            return Ok(publisherAdd);
         }
-
-        [HttpPut("{id}")]
-        public IActionResult PutPublishers(int id, Publishers publishers)
+        [HttpPut("update-publisher-by-id/{id}")]
+        public IActionResult UpdatePublisherById(int id, [FromBody] PublisherNoIdDTO
+       publisherDTO)
         {
-            if (id != publishers.ID)
-            {
-                return BadRequest();
-            }
+            var publisherUpdate = _publisherRepository.UpdatePublisherById(id,
+           publisherDTO);
 
-            _context.Entry(publishers).State = EntityState.Modified;
-            _context.SaveChanges();
-
-            return NoContent();
+            return Ok(publisherUpdate);
         }
-
-        [HttpDelete("{id}")]
-        public IActionResult DeletePublishers(int id)
+        [HttpDelete("delete-publisher-by-id/{id}")]
+        public IActionResult DeletePublisherById(int id)
         {
-            var publishers = _context.publishers.Find(id);
-
-            if (publishers == null)
-            {
-                return NotFound();
-            }
-
-            _context.publishers.Remove(publishers);
-            _context.SaveChanges();
-
-            return NoContent();
+            var publisherDelete = _publisherRepository.DeletePublisherById(id);
+            return Ok();
         }
     }
 }

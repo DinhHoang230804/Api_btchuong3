@@ -1,0 +1,43 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Library_web
+build_property.RootNamespace = Library_web
+build_property.ProjectDir = D:\laptrinhweb\Btchuong3\Library-web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\laptrinhweb\Btchuong3\Library-web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/laptrinhweb/Btchuong3/Library-web/Views/addBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRkQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/laptrinhweb/Btchuong3/Library-web/Views/BookDTO.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va0RUTy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/laptrinhweb/Btchuong3/Library-web/Views/editBookDTO.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZWRpdEJvb2tEVE8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/laptrinhweb/Btchuong3/Library-web/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/laptrinhweb/Btchuong3/Library-web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/laptrinhweb/Btchuong3/Library-web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
